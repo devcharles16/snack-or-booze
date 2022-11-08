@@ -3,7 +3,7 @@ import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, NavItem } from "reactstrap";
 
-function NavBar(snacks, drinks) {
+function NavBar() {
   return (
     <div>
       <Navbar expand="md">
@@ -16,7 +16,7 @@ function NavBar(snacks, drinks) {
             <NavLink to="/snacks">Snacks</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/drinks">drinks</NavLink>
+            <NavLink to="/drinks">Drinks</NavLink>
           </NavItem>
         </Nav>
       </Navbar>
