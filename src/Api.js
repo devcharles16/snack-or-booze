@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_API_URL = ('http://localhost:5000/', {mode:'cors'});;
+const BASE_API_URL = 'http://localhost:5000'
 
 /* 
   json-server will give you CRUD endpoints on snacks and drinks.

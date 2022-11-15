@@ -10,16 +10,17 @@ import AddForm from './AddForm';
 
 
 
+
   function App() {
-    const [ isLoading, setIsLoading ] = useState(false);
+    const [ isLoading, setIsLoading ] = useState(true);
     const [ snacks, setSnacks ] = useState([]);
     const [ drinks, setDrinks ] = useState([]);
   
     // get drinks and snacks on page load and set state accordingly.
     useEffect(() => {
       async function getItems() {
-        let snackList = await SnackOrBoozeApi.getSnacks();
-        let drinkList = await SnackOrBoozeApi.getDrinks();
+        let snackList = await SnackOrBoozeApi.getSnacks([]);
+        let drinkList = await SnackOrBoozeApi.getDrinks([]);
         setSnacks(snackList);
         setDrinks(drinkList);
         setIsLoading(false);
@@ -58,11 +59,11 @@ import AddForm from './AddForm';
             <Route exact path="/snacks">
               <Menu items={snacks} title="Snacks" />
             </Route>
-            <Route exact path="/drinks">
-            <Menu items={drinks} title="Drinks" />
-            </Route>
             <Route path="/snacks/:id">
               <MenuItem items={snacks} cantFind="/snacks" />
+            </Route>
+            <Route exact path="/drinks">
+            <Menu items={drinks} title="Drinks" />
             </Route>
             <Route path="/drinks/:id">
               <MenuItem items={drinks} cantFind="/drinks" />

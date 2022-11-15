@@ -15,7 +15,7 @@ function Menu({ items, title }) {
     <section className="col-md-4">
       <Card>
         <CardBody>
-          <CardTitle className="font-weight-bold text-center">{title}
+          <CardTitle className="font-weight-bold text-center">{title}&nbsp;
             Menu
           </CardTitle>
           <CardText>
