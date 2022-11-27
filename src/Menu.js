@@ -1,38 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Menu.css";
-import {
-  Card,
-  CardBody,
-  CardTitle,
-  CardText,
-  ListGroup,
-  ListGroupItem
-} from "reactstrap";
+import { Redirect, useParams } from "react-router-dom";
+import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 
-function Menu({ items, title }) {
+function FoodItem({ items, cantFind }) {
+  const { id } = useParams();
+
+  let snack = items.find(snack => snack.id === id);
+  if (!snack) return <Redirect to={cantFind} />;
+
   return (
-    <section className="col-md-4">
+    <section>
       <Card>
         <CardBody>
-          <CardTitle className="font-weight-bold text-center">{title}&nbsp; 
-            Menu
+          <CardTitle className="font-weight-bold text-center">
+            {snack.name}
           </CardTitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </CardText>
-          <ListGroup>
-            {items.map(menuItem => (
-              <Link to={`/items/${menuItem.id}`} key={menuItem.id}>
-                <ListGroupItem>{menuItem.name}</ListGroupItem>
-              </Link>
-            ))}
-          </ListGroup>
+          <CardText className="font-italic">{snack.description}</CardText>
+          <p>
+            <b>Recipe:</b> {snack.recipe}
+          </p>
+          <p>
+            <b>Serve:</b> {snack.serve}
+          </p>
         </CardBody>
       </Card>
     </section>
   );
 }
 
-export default Menu;
+export default FoodItem;
