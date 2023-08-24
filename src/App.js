@@ -37,7 +37,7 @@ function App() {
 				<NavBar />
 				<main>
 					<Switch>
-						<Route exact path="/">
+						<Route path="/"> 
 							<Home menuItems={menuItems} />
 						</Route>
 						<Route exact path="/snacks">
