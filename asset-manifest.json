@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/snack-or-booze/static/css/main.383d035c.chunk.css",
+    "main.js": "/snack-or-booze/static/js/main.c8f3a12b.chunk.js",
+    "main.js.map": "/snack-or-booze/static/js/main.c8f3a12b.chunk.js.map",
+    "runtime-main.js": "/snack-or-booze/static/js/runtime-main.11e43b05.js",
+    "runtime-main.js.map": "/snack-or-booze/static/js/runtime-main.11e43b05.js.map",
+    "static/css/2.c4e73993.chunk.css": "/snack-or-booze/static/css/2.c4e73993.chunk.css",
+    "static/js/2.3daa7300.chunk.js": "/snack-or-booze/static/js/2.3daa7300.chunk.js",
+    "static/js/2.3daa7300.chunk.js.map": "/snack-or-booze/static/js/2.3daa7300.chunk.js.map",
+    "index.html": "/snack-or-booze/index.html",
+    "static/css/2.c4e73993.chunk.css.map": "/snack-or-booze/static/css/2.c4e73993.chunk.css.map",
+    "static/css/main.383d035c.chunk.css.map": "/snack-or-booze/static/css/main.383d035c.chunk.css.map",
+    "static/js/2.3daa7300.chunk.js.LICENSE.txt": "/snack-or-booze/static/js/2.3daa7300.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11e43b05.js",
+    "static/css/2.c4e73993.chunk.css",
+    "static/js/2.3daa7300.chunk.js",
+    "static/css/main.383d035c.chunk.css",
+    "static/js/main.c8f3a12b.chunk.js"
+  ]
+}
